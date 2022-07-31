@@ -30,10 +30,9 @@ public class DepositCalculator {
         action = scanner.nextInt();
         double outAmount = 0;
 
-        if (action ==1) {
+        if (action == 1) {
             outAmount = calculateSimplePercentFunction(amount, 0.06, period);
-        }
-        else if (action == 2) {
+        } else if (action == 2) {
             outAmount = calculateComplexPercentFunction(amount, 0.06, period);
         }
         System.out.println("Результат вклада: " + amount + " за " + period + " лет превратятся в " + outAmount);
